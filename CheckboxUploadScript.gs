@@ -12,7 +12,7 @@ function doGet() {
   // Wrap everything in a single formPanel
   var fPanel = app.createFormPanel().setSize('50%','50%');
   
-  // Container for widget elements: absolute panel
+  // Container for widget elements
   var fTable = app.createFlexTable().setId('ft');
   fTable.setStyleAttribute('marginTop','20');
   fTable.setStyleAttribute('marginLeft','20');
@@ -92,7 +92,7 @@ function doPost(e) {
   var root = DocsList.getFolder('');
   doc.removeFromFolder(root);
 
-  //Create stack panel
+  //Build new panel to show 'submission-received' message
   var vertPanel = app.createAbsolutePanel().setSize('100%', '100%');
   var submitComplete = app.createLabel('Thanks for your submission!');
   submitComplete.setStyleAttribute('font-weight','bold'); 
