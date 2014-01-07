@@ -9,7 +9,7 @@ function doGet() {
   spacer.setStyleAttribute('lineHeight','140%');
   spacer.setStyleAttribute('color','#FFFFFF');
   
-  // Wrap everything in a single formPanel, maxed to full window
+  // Wrap everything in a single formPanel
   var fPanel = app.createFormPanel().setSize('50%','50%');
   
   // Container for widget elements: absolute panel
